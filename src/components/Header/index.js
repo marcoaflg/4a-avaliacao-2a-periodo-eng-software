@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 export default class Header extends Component {
@@ -6,9 +7,9 @@ export default class Header extends Component {
         return (
             <div className="topnav">
                 <a className="active" href="/">Home</a>
-                <a className="right" href="/">Sobre</a>
-                <a className="right" href="/">Contato</a>
-                <a className="right" href="/">Entrar</a>
+                <a className="right" href="/"><Link to="/PageNotFound">Sobre</Link></a>
+                <a className="right" href="/"><Link to="/PageNotFound">Contato</Link></a>
+                <a className="right" href="/"><Link to="/PageNotFound">Entrar</Link></a>
             </div> 
         )
     }
