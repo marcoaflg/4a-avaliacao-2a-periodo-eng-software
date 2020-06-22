@@ -1,15 +1,16 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import Trooper from '../../assets/404-01.png';
 import './styles.css';
 
-function Home() {
+function PageNotFound() {
     return (
-        <div className="Home">
+        <div id="bg" className="Home">
             <Header />
             <Footer />
         </div>
     );
 }
 
-export default Home;
+export default PageNotFound;
